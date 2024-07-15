@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Yummy</title>
+  </head>
+  <body cz-shortcut-listen="true">
+    <div id="leftMenu" class="d-flex position-fixed top-0 vh-100">
+      <nav class="d-flex flex-column justify-content-between p-4">
+        <ul class="list-unstyled">
+          <li onclick="showSearchInputs(); closeNav();">Search</li>
+          <li onclick="getCategories(); closeNav();">Categories</li>
+          <li onclick="getAreas(); closeNav();">Area</li>
+          <li onclick="getIngredients(); closeNav();">Ingredients</li>
+          <li onclick="showContactsAndAddEvents(); closeNav();">Contact Us</li>
+        </ul>
+        <div>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <p>
+            Copyright Â© 2019 All Rights<br />
+            Reserved.
+          </p>
+        </div>
+      </nav>
+      <header
+        class="d-flex flex-column justify-content-between bg-white text-black py-4 px-2 text-center"
+      >
+        <div class="logo">
+          <img src="images/logo.png" alt="logo" class="w-100" />
+        </div>
+        <div class="cursor-pointer" id="closeNav">
+          <i class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+        </div>
+        <div>
+          <i class="fa-solid fa-globe d-block cursor-pointer"></i>
+          <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+        </div>
+      </header>
+    </div>
+    <main id="home" class="min-vh-100 position-relative">
+      <div class="container w-75" id="searchContainer"></div>
+
+      <div class="min-vh-100 position-relative">
+        <div
+          class="inner-loading-screen justify-content-center align-items-center position-absolute top-0 bottom-0 start-0 end-0 text-white"
+        >
+          <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+        <div class="container">
+          <div class="row py-5 g-4" id="data"></div>
+        </div>
+      </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

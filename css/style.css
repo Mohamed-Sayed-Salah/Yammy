@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  scroll-behavior: auto !important;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #f9f6f6 !important;
+}
+
+/** Loading Screen **/
+.inner-loading-screen {
+  background-color: #0d0d0d;
+  display: none;
+  z-index: 99;
+}
+
+.logo {
+  width: 50px;
+}
+
+#leftMenu {
+  left: -256.562px;
+  z-index: 9999;
+}
+
+#leftMenu nav {
+  background-color: #0d0d0d;
+  left: 0px;
+}
+
+#leftMenu ul li {
+  position: relative;
+  top: 0px;
+  padding: 12px 0;
+  cursor: pointer;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.img-layer {
+  top: 100%;
+  transition: all 0.5s;
+}
+
+#data .item:hover .img-layer {
+  top: 0;
+}
+
+#searchContainer input::placeholder {
+  color: rgba(249, 246, 246, 0.4) !important;
+}
+
+.alert {
+  width: fit-content;
+}
